@@ -20,6 +20,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 		<title></title>
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/poo.png">
 
 		<link href="<?php echo get_template_directory_uri(); ?>/lib/ionic/css/ionic.css" rel="stylesheet">
 		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
