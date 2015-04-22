@@ -19,6 +19,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 		<title></title>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/poo.png">
 
