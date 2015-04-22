@@ -121,87 +121,87 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 
 	};
 
-//	$scope.peePopup = function() {
-//		$scope.newPee = {}
-//
-//		var peePopup = $ionicPopup.show({
-//			template: '<input type="textarea" ng-model="newPee.note">',
-//			title: 'Log a Pee!',
-//			subTitle: 'Leave a note if you\'d like',
-//			scope: $scope,
-//			buttons: [
-//				{ text: 'Cancel' },
-//				{
-//					text: '<b>Save</b>',
-//					type: 'button-positive',
-//					onTap: function(e) {
-//						var req = {
-//							method: 'POST',
-//							url: 'http://babytracker.dev/wp-json/posts',
-//							headers: {
-//								'X-WP-Nonce': WP_API_Settings.nonce
-//							},
-//							data: {
-//								title: '',
-//								content_raw: $scope.newPee.note,
-//								type: 'baby_action',
-//								status: 'publish',
-//								post_meta: [{key:'baby_action_type', value: 'pee'}]
-//							}
-//						}
-//						$http(req)
-//							.success(function(response) {
-//								console.log(response);
-//								$window.location.reload();
-//							});
-//
-//					}
-//				}
-//			]
-//		});
-//
-//	};
-//
-//	$scope.eatPopup = function() {
-//		$scope.newEat = {}
-//
-//		var eatPopup = $ionicPopup.show({
-//			template: '<input type="textarea" ng-model="newEat.note">',
-//			title: 'Log an Eat!',
-//			subTitle: 'Leave a note if you\'d like',
-//			scope: $scope,
-//			buttons: [
-//				{ text: 'Cancel' },
-//				{
-//					text: '<b>Save</b>',
-//					type: 'button-positive',
-//					onTap: function(e) {
-//						var req = {
-//							method: 'POST',
-//							url: 'http://babytracker.dev/wp-json/posts',
-//							headers: {
-//								'X-WP-Nonce': WP_API_Settings.nonce
-//							},
-//							data: {
-//								title: '',
-//								content_raw: $scope.newEat.note,
-//								type: 'baby_action',
-//								status: 'publish',
-//								post_meta: [{key:'baby_action_type', value: 'eat'}]
-//							}
-//						}
-//						$http(req)
-//							.success(function(response) {
-//								console.log(response);
-//								$window.location.reload();
-//							});
-//
-//					}
-//				}
-//			]
-//		});
-//
-//	};
+	$scope.peePopup = function() {
+		$scope.newPee = {}
+
+		var peePopup = $ionicPopup.show({
+			template: '<input type="textarea" ng-model="newPee.note">',
+			title: 'Log a Pee!',
+			subTitle: 'Leave a note if you\'d like',
+			scope: $scope,
+			buttons: [
+				{ text: 'Cancel' },
+				{
+					text: '<b>Save</b>',
+					type: 'button-positive',
+					onTap: function(e) {
+						var req = {
+							method: 'POST',
+							url: 'http://babytracker.dev/wp-json/posts',
+							headers: {
+								'X-WP-Nonce': WP_API_Settings.nonce
+							},
+							data: {
+								title: '',
+								content_raw: $scope.newPee.note,
+								type: 'baby_action',
+								status: 'publish',
+								post_meta: [{key:'baby_action_type', value: 'pee'}]
+							}
+						}
+						$http(req)
+							.success(function(response) {
+								console.log(response);
+								$window.location.reload();
+							});
+
+					}
+				}
+			]
+		});
+
+	};
+
+	$scope.eatPopup = function() {
+		$scope.newEat = {}
+
+		var eatPopup = $ionicPopup.show({
+			template: '<input type="textarea" ng-model="newEat.note">',
+			title: 'Log an Eat!',
+			subTitle: 'Leave a note if you\'d like',
+			scope: $scope,
+			buttons: [
+				{ text: 'Cancel' },
+				{
+					text: '<b>Save</b>',
+					type: 'button-positive',
+					onTap: function(e) {
+						var req = {
+							method: 'POST',
+							url: 'http://babytracker.dev/wp-json/posts',
+							headers: {
+								'X-WP-Nonce': WP_API_Settings.nonce
+							},
+							data: {
+								title: '',
+								content_raw: $scope.newEat.note,
+								type: 'baby_action',
+								status: 'publish',
+								post_meta: [{key:'baby_action_type', value: 'eat'}]
+							}
+						}
+						$http(req)
+							.success(function(response) {
+								console.log(response);
+								$window.location.reload();
+							});
+
+					}
+				}
+			]
+		});
+
+	};
 
 }]);
 
