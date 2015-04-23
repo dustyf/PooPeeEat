@@ -90,7 +90,7 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 					onTap: function(e) {
 						var req = {
 							method: 'POST',
-							url: 'http://babytracker.dev/wp-json/posts',
+							url: '/wp-json/posts',
 							headers: {
 								'X-WP-Nonce': WP_API_Settings.nonce
 							},
@@ -131,7 +131,7 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 					onTap: function(e) {
 						var req = {
 							method: 'POST',
-							url: 'http://babytracker.dev/wp-json/posts',
+							url: '/wp-json/posts',
 							headers: {
 								'X-WP-Nonce': WP_API_Settings.nonce
 							},
@@ -172,7 +172,7 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 					onTap: function(e) {
 						var req = {
 							method: 'POST',
-							url: 'http://babytracker.dev/wp-json/posts',
+							url: '/wp-json/posts',
 							headers: {
 								'X-WP-Nonce': WP_API_Settings.nonce
 							},
