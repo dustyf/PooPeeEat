@@ -20,7 +20,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<title></title>
+		<title>PooPeeEat</title>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/poo.png">
 
 		<link href="<?php echo get_template_directory_uri(); ?>/lib/ionic/css/ionic.css" rel="stylesheet">
@@ -84,7 +84,7 @@
 		?>
 			<ion-pane>
 				<ion-header-bar class="bar-stable">
-					<a href="<?php echo wp_logout_url( site_url() ); ?>"><button class="button icon ion-log-out">Log Out</button></a>
+					<button class="button icon ion-log-out" onclick="window.location='<?php echo wp_logout_url( site_url() ); ?>'">Log Out</button>
 					<h1 class="title">Poo, Pee, or Eat?</h1>
 				</ion-header-bar>
 				<ion-content class="has-header">

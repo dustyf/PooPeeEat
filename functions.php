@@ -38,7 +38,8 @@ function baby_add_tax() {
 add_action( 'init', 'baby_add_tax' );
 
 function baby_json_query_vars( $vars ) {
-	var_dump($vars);
+	$vars[] = 'meta_key';
+	$vars[] = 'meta_value';
 	return $vars;
 }
-//add_filter( 'query_vars', 'baby_json_query_vars' );
+add_filter( 'json_query_vars', 'baby_json_query_vars' );

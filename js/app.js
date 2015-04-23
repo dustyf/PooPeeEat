@@ -28,12 +28,10 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 	$http({
 		method: 'GET',
 		url: 'http://babytracker.dev/wp-json/posts',
-		headers: {
-			'X-WP-Nonce': WP_API_Settings.nonce
-		},
 		params: {
 			type: 'baby_action',
-			'filter[baby_action_type]': 'poo',
+			'filter[meta_key]': 'baby_action_type',
+			'filter[meta_value]': 'poo',
 			'filter[posts_per_page]': 1,
 			'filter[orderby]': 'date'
 		}
@@ -46,12 +44,10 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 	$http({
 		method: 'GET',
 		url: 'http://babytracker.dev/wp-json/posts',
-		headers: {
-			'X-WP-Nonce': WP_API_Settings.nonce
-		},
 		params: {
 			type: 'baby_action',
-			'filter[baby_action_type]': 'pee',
+			'filter[meta_key]': 'baby_action_type',
+			'filter[meta_value]': 'pee',
 			'filter[posts_per_page]': 1,
 			'filter[orderby]': 'date'
 		}
@@ -65,12 +61,10 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 	$http({
 		method: 'GET',
 		url: 'http://babytracker.dev/wp-json/posts',
-		headers: {
-			'X-WP-Nonce': WP_API_Settings.nonce
-		},
 		params: {
 			type: 'baby_action',
-			'filter[baby_action_type]': 'eat',
+			'filter[meta_key]': 'baby_action_type',
+			'filter[meta_value]': 'eat',
 			'filter[posts_per_page]': 1,
 			'filter[orderby]': 'date'
 		}
