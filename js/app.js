@@ -27,7 +27,7 @@ app.run(function($ionicPlatform) {
 app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', function($scope, $http, $window, $ionicPopup) {
 	$http({
 		method: 'GET',
-		url: 'http://babytracker.dev/wp-json/posts',
+		url: '/wp-json/posts',
 		params: {
 			type: 'baby_action',
 			'filter[meta_key]': 'baby_action_type',
@@ -43,7 +43,7 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 
 	$http({
 		method: 'GET',
-		url: 'http://babytracker.dev/wp-json/posts',
+		url: '/wp-json/posts',
 		params: {
 			type: 'baby_action',
 			'filter[meta_key]': 'baby_action_type',
@@ -60,7 +60,7 @@ app.controller('PooPeeEat', [ '$scope', '$http', '$window', '$ionicPopup', funct
 
 	$http({
 		method: 'GET',
-		url: 'http://babytracker.dev/wp-json/posts',
+		url: '/wp-json/posts',
 		params: {
 			type: 'baby_action',
 			'filter[meta_key]': 'baby_action_type',
